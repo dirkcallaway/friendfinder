@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "An app that finds a compatible friend!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirkcallaway/friendfinder.git"
+  },
+  "author": "Matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirkcallaway/friendfinder/issues"
+  },
+  "homepage": "https://github.com/dirkcallaway/friendfinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
