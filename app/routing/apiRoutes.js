@@ -13,8 +13,8 @@ app.post("/api/friends", function(req, res){
   var compatibleFriend;
   var surveyResults = [];
   var compatibility = [];
-  //Creates an array of the survey answers.
-  Object.values(req.body).forEach(function(value){
+  //Creates an array of the survey answers.  Taking just the first character.
+  req.body.scores.forEach(function(value){
     surveyResults.push(value[0]);
   });
   //Loops over each friend...
@@ -34,6 +34,11 @@ app.post("/api/friends", function(req, res){
     }
   }
   console.log("Your most compatible friend is: " + friends[compatibleFriend].name);
+  console.log("His picture URL is: " + friends[compatibleFriend].photo);
+  res.json({
+    friendName: friends[compatibleFriend].name,
+    friendPhoto: friends[compatibleFriend].photo
+});
 
 });
 };

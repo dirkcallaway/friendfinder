@@ -12,8 +12,8 @@ var friendArr = [
   scores: [2, 4, 5, 1, 3, 2, 3, 1, 1, 4]
 },
 {
-  name: "Bobby",
-  photo: "https://cdn.pixabay.com/photo/2015/07/09/22/04/man-838636_960_720.jpg",
+  name: "Harry",
+  photo: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/09/29/15/hp.jpg?w968",
   scores: [2, 1, 2, 2, 3, 4, 1, 5, 3, 2]
 },
 {
