@@ -9,18 +9,31 @@ app.get("/api/friends", function(req, res){
 });
 
 app.post("/api/friends", function(req, res){
+  var mostCompatibleScore = 45;
+  var compatibleFriend;
   var surveyResults = [];
+  var compatibility = [];
+  //Creates an array of the survey answers.
   Object.values(req.body).forEach(function(value){
     surveyResults.push(value[0]);
   });
+  //Loops over each friend...
   friends.forEach(function(friend){
     var difference = 0;
+    //Compares their scores to the results.
     for(var i = 0; i < friend.scores.length; i++){
       difference += Math.abs(friend.scores[i] - surveyResults[i]);
     }
+    //Pushes the final compatibility score into an array.
     compatibility.push(difference);
-    console.log(compatibility);
   });
+  for(var i = 0; i < compatibility.length; i++){
+    if(compatibility[i] < mostCompatibleScore){
+      mostCompatibleScore = compatibility[i];
+      compatibleFriend = i;
+    }
+  }
+  console.log("Your most compatible friend is: " + friends[compatibleFriend].name);
 
 });
 };
