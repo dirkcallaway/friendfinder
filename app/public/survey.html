@@ -1,22 +1,166 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Friend Finder</title>
-  </head>
-  <body>
-    <h1>Survey Page!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <title>Potter's Friend Finder Survey</title>
+</head>
+
+<body>
+  <div class="container pt-3 pb-3">
+    <h2>Wizarding Questions await!</h2>
+    <hr>
+
+    <form method="POST" action="/api/friends">
+      <!--Question 1-->
+      <h3><strong>What position in Quidditch do you play?</strong></h3>
+      <div class="form-group">
+        <label for="q1"></label>
+        <select class="form-control col-md-6" id="q1" name="q1">
+            <option>1 (Not Likely)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 2-->
+      <h3><strong>Question 2</strong></h3>
+      <div class="form-group">
+        <label for="q2">Example select</label>
+        <select class="form-control col-md-6" id="q2" name="q2">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 3-->
+      <h3><strong>Question 3</strong></h3>
+      <div class="form-group">
+        <label for="q3">Example select</label>
+        <select class="form-control col-md-6" id="q3" name="q3">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 4-->
+      <h3><strong>Question 4</strong></h3>
+      <div class="form-group">
+        <label for="q4">Example select</label>
+        <select class="form-control col-md-6" id="q4" name="q4">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 5-->
+      <h3><strong>Question 5</strong></h3>
+      <div class="form-group">
+        <label for="q5">Example select</label>
+        <select class="form-control col-md-6" id="q5" name="q5">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 6-->
+      <h3><strong>Question 6</strong></h3>
+      <div class="form-group">
+        <label for="q6">Example select</label>
+        <select class="form-control col-md-6" id="q6" name="q6">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 7-->
+      <h3><strong>Question 7</strong></h3>
+      <div class="form-group">
+        <label for="q7">Example select</label>
+        <select class="form-control col-md-6" id="q7" name="q7">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 8-->
+      <h3><strong>Question 8</strong></h3>
+      <div class="form-group">
+        <label for="q8">Example select</label>
+        <select class="form-control col-md-6" id="q8" name="q8">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 9-->
+      <h3><strong>Question 9</strong></h3>
+      <div class="form-group">
+        <label for="q9">Example select</label>
+        <select class="form-control col-md-6" id="q9" name="q9">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <!--Question 10-->
+      <h3><strong>Question 10</strong></h3>
+      <div class="form-group">
+        <label for="q10">Example select</label>
+        <select class="form-control col-md-6" id="q10" name="q10">
+          <option>1 (Not Likely)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Very Likely)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
