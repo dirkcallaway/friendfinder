@@ -33,8 +33,7 @@ app.post("/api/friends", function(req, res){
       compatibleFriend = i;
     }
   }
-  console.log("Your most compatible friend is: " + friends[compatibleFriend].name);
-  console.log("His picture URL is: " + friends[compatibleFriend].photo);
+
   res.json({
     friendName: friends[compatibleFriend].name,
     friendPhoto: friends[compatibleFriend].photo
